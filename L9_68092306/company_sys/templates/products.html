@@ -1,0 +1,114 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<style>
+
+.page-title{
+font-weight:bold;
+margin-bottom:40px;
+}
+
+.product-card{
+background:white;
+border-radius:18px;
+overflow:hidden;
+box-shadow:0 8px 20px rgba(0,0,0,0.08);
+transition:0.3s;
+border:2px solid transparent;
+}
+
+.product-card:hover{
+transform:translateY(-8px);
+border-color:#0d6efd;
+box-shadow:0 12px 28px rgba(13,110,253,0.25);
+}
+
+.product-img{
+width:100%;
+height:260px;
+object-fit:cover;
+transition:0.4s;
+}
+
+.product-card:hover .product-img{
+transform:scale(1.08);
+}
+
+.product-info{
+padding:15px;
+text-align:center;
+}
+
+</style>
+
+<div class="container py-5">
+
+<h1 class="text-center page-title">Product Catalog</h1>
+
+<div class="row g-4">
+
+<div class="col-md-4">
+<div class="product-card">
+<img src="https://picsum.photos/500/400?1" class="product-img">
+<div class="product-info">
+<h5>Product 1</h5>
+<p>Modern city lifestyle</p>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="product-card">
+<img src="https://picsum.photos/500/400?2" class="product-img">
+<div class="product-info">
+<h5>Product 2</h5>
+<p>Simple design</p>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="product-card">
+<img src="https://picsum.photos/500/400?3" class="product-img">
+<div class="product-info">
+<h5>Product 3</h5>
+<p>Elegant style</p>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="product-card">
+<img src="https://picsum.photos/500/400?4" class="product-img">
+<div class="product-info">
+<h5>Product 4</h5>
+<p>Urban collection</p>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="product-card">
+<img src="https://picsum.photos/500/400?5" class="product-img">
+<div class="product-info">
+<h5>Product 5</h5>
+<p>Comfort everyday</p>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="product-card">
+<img src="https://picsum.photos/500/400?6" class="product-img">
+<div class="product-info">
+<h5>Product 6</h5>
+<p>Trendy choice</p>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+{% endblock %}
